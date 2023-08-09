@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.netflix.com</title>
+    <link rel="shortcut icon" href="./1.png" type="image/x-icon">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background: #000;
+            color: #fff;
+            font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+        }
+        .parent{
+            height: 100vh;
+            width: 100%;
+            background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.5),rgba(0,0,0,0.8)),url(./netflix_29.avif);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            padding: 10px 0;
+            
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 100px 0 150px;
+        }
+        .logo{
+            width: 190px;
+        }
+        nav #signin{
+            border: 0;
+            outline: 0;
+            background: #E50914;
+            color: #fff;
+            padding: 6px 16px ;
+            font-size: 15px ;
+            border-radius: 0.25rem;
+            margin-left: 10px;
+            font-weight: 545;
+            cursor: pointer;
+            display: inline-flex;
+            border: 1px solid #E50914;
+        }
+        #signin:hover{
+            transition: inherit;
+            background-color: #cf151e;
+        }
+        #language_b{
+            outline: 0;
+            background: transparent;
+            color: #fff;
+            padding: 6px 28px 6px 36px;
+            border-radius: 4px;
+            font-size: 15px;
+            /* font-weight: bold; */
+            font-weight: 500;
+        }
+        #language_b:hover{
+            display: inline-block;
+            box-sizing: border-box;
+            border: 3px solid #fff;
+            border-radius: 4px;
+        }
+        .content{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            /* margin-top: 100px; */
+        }
+        .content #h1{
+            font-size: 50px;
+            font-weight: 700;
+            line-height: 50px;
+            display: inline;
+            font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+        }
+        .content #h2{
+            font-size: 25px;
+            letter-spacing: 0.1px;
+            font-weight: 400;
+            margin: 20px;
+        }
+        .content #h3{
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: 0;
+        }
+        form{
+            display: flex;
+            justify-content: center;
+        }
+        form #email{
+            padding: 20px 10px;
+            border-radius: 4px;
+            border: 0;
+            font-size: 16px;
+            width: 350px;
+            height: 18px;
+            background-color: rgba(0,0,0,0.5); 
+            border: 1px solid gray;     
+        }
+        #getStart{
+            /* height: 50px;
+            width: 100px; */
+            padding: 15px 20px;
+            font-size:22px;
+            font-weight: 500;
+            background-color: #E50914;
+            color: #fff;
+            border: 0;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-left: 10px;
+        }
+        #getStart:hover{
+            background-color: #cf151e;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="parent" id="parent">
+        <nav>
+            <img src="./Netflix_Logo_RGB.png" alt="image not found" class="logo">
+            <div class="button" id="button">
+                <select name="" id="language_b">
+                    <option value="English">English</option>
+                    <option value="Hindi">हिंदी</option>
+                </select>
+                <button id="signin" >Sign In</button>
+            </div>
+        </nav>
+        <div class="content">
+            <p id="h1">Unlimited movies, TV shows and more</p>
+            <p id="h2">Watch anywhere. Cancel anytime.</p>
+            <p id="h3">Ready to watch? Enter your email to create or restart your membership.</p>
+            <form action="">
+                <input type="email" name="" id="email" placeholder="Email address">
+                <button id="getStart">Get Started ></button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
